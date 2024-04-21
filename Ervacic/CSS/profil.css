@@ -111,7 +111,7 @@ body {
   }
 
   #modal-image {
-    width: 90%; /* Prilagođena širina slike */
+    width: auto; /* Prilagođena širina slike */
     height: auto; /* Automatsko podešavanje visine */
     max-width: 100%; /* Ograniči maksimalnu širinu na 100% */
     max-height: 80vh; /* Ograniči maksimalnu visinu na 80% visine ekrana */
