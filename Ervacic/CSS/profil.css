@@ -73,10 +73,7 @@ body {
 #modal-content {
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 5% auto; /* Prilagođene margine za modalni prozor */
 }
 
 #modal-image {
@@ -88,18 +85,9 @@ body {
   margin: auto;
   width: 700px;
   height: 600px;
-}
-
-#p1 {
-  margin-top: 50px;
-}
-
-.tekst {
-  font-size: 18px;
-  text-align: center;
-  color: black; 
-  margin-bottom: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 90%; /* Prilagođena maksimalna širina za mobilne uređaje */
+  height: auto; /* Automatsko podešavanje visine */
+  max-height: 80vh; /* Ograniči maksimalnu visinu na 80% visine ekrana */
 }
 
 #modal-header {
@@ -109,14 +97,31 @@ body {
 @media screen and (max-width: 768px) {
   /* Stilovi za ekrane manje ili jednake 768px širine */
   .content-container {
-      flex-direction: column; /* Stavi sadržaj vertikalno za manje ekrane */
-      align-items: center; /* Centriraj sadržaj */
+    flex-direction: column; /* Stavi sadržaj vertikalno za manje ekrane */
+    align-items: center; /* Centriraj sadržaj */
   }
 
   .boxtext p {
-      margin-top: 2vh; /* Manji razmak između paragrafa */
+    margin-top: 2vh; /* Manji razmak između paragrafa */
+  }
+
+  /* Stilovi za modalni prozor na mobilnim uređajima */
+  .modal {
+    /* Tvoji trenutni stilovi za modalni prozor */
+  }
+
+  #modal-image {
+    width: 90%; /* Prilagođena širina slike */
+    height: auto; /* Automatsko podešavanje visine */
+    max-width: 100%; /* Ograniči maksimalnu širinu na 100% */
+    max-height: 80vh; /* Ograniči maksimalnu visinu na 80% visine ekrana */
+  }
+
+  #modal-content {
+    margin: 5% auto; /* Prilagođene margine za modalni prozor */
   }
 }
+
 
 
 
