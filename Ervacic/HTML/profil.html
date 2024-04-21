@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/profil.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>            
+              </button>
+              <a class="navbar-brand" href="https://www.ferit.unios.hr/">FERIT</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="../../index.html">Početna</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Studenti<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://sites.google.com/view/spajicminic/mateospajic">Spajić</a></li>
+                    <li><a href="https://perlamulti.webflow.io/">Perlić</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="content-container">
+        <div class="boxtext">
+          <div id="image"><img src="../IMAGES/me.png" alt="Slika macke" id="img_p" onclick="show(this)"></div>
+            <h2>Osobni podaci</h2>
+            <p class="tekst">
+              Ime i prezime: Marino Ervačić
+                <br>Datum rođenja: 14. Rujna 2002.
+               <br>Mjesto rođenja: Đakovo
+               <br>Prebivalište: Piškorevci
+               <br>Spol: M
+               <br>E-mail: <a href="mailto:ervacicmarino@gmail.com">ervacicmarino@gmail.com </a>
+              </p>
+        </div>
+        
+      </div>
+      <div class="content-container">
+        <div class="boxtext">
+       
+              <div id="image">
+                <img src="../IMAGES/skola.bmp" alt="Slika skole" id="img_p" onclick="show(this)"  >   
+              </div>
+            <h2>Obrazovanje</h2>
+            <p class="tekst">
+                Osnovna škola: Ivan Goran Kovačić
+               <br>Srednja škola: <a href="https://strukovna.com/">Srednja strukovna škola Antuna Horvata</a>
+               <br>Smjer: Strojarski računalni tehničar
+               <br>Fakultet: <a href="https://www.ferit.unios.hr/">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek </a>
+               <br>Smjer: Tehničar za računarstvo
+              </p>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="boxtext">
+          <div id="image"><img src="../IMAGES/randomgif.gif" alt="gif" id="img_p" onclick="show(this)"></div>
+            <h2>Vještine</h2>
+            <p class="tekst">
+                Posjedujem solidno znanje programskih jezika poput Pythona, Jave, C#, C i JavaScripta, što mi omogućuje prilagodbu različitim tehnološkim zahtjevima. 
+                Često koristim Spring Boot i React frameworkove za razvoj aplikacija, dok za bazu podataka preferiram PostgreSQL i MongoDB. 
+                Spreman sam istražiti i naučiti nove stvari ukoliko mi nisu jasne.
+               
+              </p>
+        </div>
+      </div>
+
+      <div class="content-container">
+        <div class="boxtext">
+      
+              <div id="image">
+                <img src="../IMAGES/work.webp" alt="Slika rada" id="img_p" onclick="show(this)">   
+              </div>
+            <h2>Radno iskustvo</h2>
+            
+              <p class="tekst">
+                Nisam imao formalno radno iskustvo, ali sam samostalno istraživao i razvijao osobne projekte koristeći Python, Java, C#, C i JavaScript. 
+                Također sam sudjelovao u različitim tečajevima i radionicama kako bih unaprijedio svoje vještine u području softverskog inženjerstva.
+
+              </p>
+        </div>
+      </div>
+
+      <div class="content-container">
+        <div class="boxtext">
+          <div id="image">
+            <video width="100%" height="100%" controls poster="../IMAGES/thumbnail.png" >
+              <source src="../VIDEOS/Đakovo.mp4"  type="video/mp4">
+            </video>
+            </div>
+            <h2><a href="https://www.djakovo.hr/">Đakovo</a></h2>
+            <p class="tekst">
+                Đakovo, grad s prekrasnom Katedralom sv. Petra i tradicionalnim festivalom Đakovačkih vezova, očarava svojom kulturnom baštinom i šarmantnom atmosferom. 
+                Poznat po uzgoju konja lipicanera, Đakovo je spoj bogate povijesti, poljoprivrede i autentičnog slavonskog duha.
+              </p>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div id="modal-header"><button type="button" class="" onclick="this.parentElement.parentElement.style.display='none'">X</button>
+            
+            </div>
+        
+          <img src="" id="modal-image" width="" height=>
+
+      </div>
+      
+  
+
+      <div id="footer">
+        <img src="../../logofer.png" alt="" width="250" height="80" style="cursor: pointer;" onclick="openPage()">
+        <p id="p1">Stranica je izrađena za vrijeme pohađanja kolegija Multimedijska tehnika</p>
+        <p id="p2">Ervačić | Lovin, 17. Travanj 2024, Dislocirani stručni studij Vinkovci</p>
+    
+    </div>
+
+    <script>
+      function show(image){
+          var modal = document.getElementById("myModal");
+          var modalImage = document.getElementById("modal-image");
+          modal.style.display = "block";
+          modalImage.src = image.src;
+      }
+      function close(modal){
+          console.log(modal.parentElement);
+          modal.parentElement.style.display="none";
+      }
+      function openPage(){
+        window.open("https://www.ferit.unios.hr/", "_blank");
+      }
+      
+        </script>
+</body>
+</html>

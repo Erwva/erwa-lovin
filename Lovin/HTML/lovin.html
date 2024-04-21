@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filip Lovin profil</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>            
+            </button>
+            <a class="navbar-brand" href="https://www.ferit.unios.hr/">FERIT</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class=""><a href="../../index.html">Početna</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Studenti<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../../Ervacic/HTML/profil.html">Marino Ervačić</a></li>
+                  <li><a href="../../Lovin/HTML/lovin.html">Filip Lovin</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="myModal" class="modal">
+        <div id="modal-header"><button type="button" class="" onclick="this.parentElement.parentElement.style.display='none'">X</button>
+            
+            </div>
+        
+          <img src="" id="modal-image" width="" height=>
+
+      </div>
+      
+      <h1>Filip Lovin</h1>
+    <div id="image">
+    <img src="../IMAGES/lovin.jpg" onclick="show(this)" width="300" height="400">
+    
+</div>
+
+<div id="resume">
+    
+    <h3 id="aboutTitle">O meni</h3>
+    <div id="about">
+    Datum rođenja: 9.12.1998 <br>
+    Mjesto rođenja: <a href="https://www.grad-vinkovci.hr/hr">Vinkovci</a><br>
+    Mjesto stanovanja: Vinkovci<br>
+    Spol: M <br>
+    
+    </div>
+    <div id="video">
+      <video width="30%" height="30%" controls poster="../IMAGES/thumbnail.png" >
+        <source src="../IMAGES/vinkovci.mp4"  type="video/mp4">
+      </video> <a href="https://www.youtube.com/watch?v=TMa4fxe2Ox0">source</a>
+    </div>
+    <h3>Obrazovanje</h3>
+    <div id="education">
+    Osnovna škola: Osnovna škola Ivana Mažuranića<br>
+    Srednja škola: <a  href="http://ss-tehnicka-rboskovica-vk.skole.hr/"> Tehnička škola Ruđera Boškovića Vinkovci</a>  <img id="slogo" onclick="show(this)" src="../IMAGES/srednjalogo.bmp" alt="tsrb logo" width="100" height="100"><br>
+ Smjer: Tehničar za mehatroniku<br><br>
+    Za vrijeme pohađanja srednje škole sam osvojio drugo mjesto na regionalnom natjecanju iz engleskog jezika.<br>
+    Fakultet: <a href="https://www.ferit.unios.hr/">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek </a>   <img id="flogo" onclick="show(this)" src="../IMAGES/big_ferit01.png" alt="ferit logo" width="250" height="80"><br>
+    Smjer: Tehničar za računarstvo<br><br>
+    Za vrijeme pohađanja fakulteta sam osvojio dekanovu nagradu za uspjeh.
+</div>
+    <h3>Radno iskustvo</h3>
+    <div id="experience">
+    <h4>Agent za korisničku podršku                                   <div id="date">25.08.2018 - 18.06.2020</div></h4>
+    <h5><a href="https://www.a1.hr/">A1 Hrvatska</a> , Zagreb <img src="../IMAGES/A1_red_logo.gif" alt="" width="30" height="30" onclick="show(this)"></h5> 
+    Bio sam agent za korisničku podršku gdje sam dnevno komunicirao s korisnicima o bilo kakvim upitima,problemima ili zahtjevima vezanih s njihovim mobilnim i fiksnim mrežama.<br>
+    Osim toga sam bio i prodavač usluga koje je nudila tvrtka A1 i ovisno o problemu pružao i tehnicku podršku. To iskustvo mi je pomoglo s razvijanjem viještina razgovaranja s klijentima.
+    <br>I sa vještinama deskalacije situacija te raznim viještinama komunikacije s ljudima.
+    </div>
+    <h3>Vještine</h3>
+    <div id="skills">Dobro upućen u jezike C i Python te imam iskustva u Javi, osim toga sam iskusan u skriptnim jezicima HTML, JavaScript, jQuery, PHP. Također imam iskustva s machine learning modelima.<br>
+    Voljan sam naučiti bilo kakvu tehnologiju ili jezik koji je potreban. Preferiram backend, ali mogu raditi i frontend dio. Vrlo vještan u ostalim računalnim vještinama i jako brzo učim nove.<br>
+    Najveća slabost mi je dizajn stranica i slična kreativna podlaganja.
+</div>
+</div>
+
+</div>
+<div id="footer">
+    <img src="../../logofer.png" alt="" width="250" height="80" style="cursor: pointer;" onclick="openPage()">
+    <p id="p1">Stranica je izrađena za vrijeme pohađanja kolegija Multimedijska tehnika</p>
+    <p id="p2">Ervačić | Lovin, 17. Travanj 2024, Dislocirani stručni studij Vinkovci</p>
+
+</div>
+  <script>
+function show(image){
+    var modal = document.getElementById("myModal");
+    var modalImage = document.getElementById("modal-image");
+    modal.style.display = "block";
+    modalImage.src = image.src;
+}
+function close(modal){
+    console.log(modal.parentElement);
+    modal.parentElement.style.display="none";
+}
+function openPage(){
+        window.open("https://www.ferit.unios.hr/", "_blank");
+      }
+
+  </script>
+</body>
+</html>

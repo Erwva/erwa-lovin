@@ -1,0 +1,111 @@
+#image {
+    text-align: center;
+    
+}
+#video{
+    
+
+text-align: center;
+padding-right: 11%;
+    
+}
+@media only screen and (max-width: 1300px) {
+video{
+    width: 90%;
+}
+#slogo{
+    display:flex;
+}
+#footer{
+    height: 200px;
+    
+}
+}
+
+.modal {
+    left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+     /* Hidden by default */
+     /* Stay in place */
+    z-index: 1; /* Sit on top */
+     /* Location of the box */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  #modal-content {
+    
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  #modal-image {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;  
+  max-width:100%;
+    
+    
+  }
+
+#modal-header{
+    text-align: right;
+}
+.close{
+    margin-right: 10px;
+}
+#about, #resume, #experience, #skills  , #education{
+    padding-left: 12%;
+    background-color: #e0ebff;
+    
+}
+#about{
+    position: relative;
+}
+#resume{
+    padding-bottom: 10px;
+}
+#aboutTitle{
+    padding-top: 10px;
+}
+h1{
+    text-align: center;
+}
+#date{
+    margin-right: 15%;
+    text-align: right;
+    
+}
+#flogo{
+    margin-left: 40px;
+   
+}
+#slogo{
+    margin-left:40px;
+    
+}
+
+#footer{
+    background-color: #c1d6ff;
+    width: auto;
+    height: 150px;
+    text-align: right;
+    padding-right: 2%;
+    padding-top: 8px;
+}
+body{
+    background-color: #f0f5ff;
+}
