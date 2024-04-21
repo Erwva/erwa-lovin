@@ -127,7 +127,7 @@ body {
 }
 
   #modal-image {
-    width: auto;
+    width: 150px;
     height: auto; 
     max-width: 90%; 
     max-height: 80vh;
