@@ -82,10 +82,9 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  width: 700px;
-  height: 600px;
-  max-width: 90%; 
+  width: auto;
   height: auto;
+  max-width: 90%; 
   max-height: 80vh;
 }
 
@@ -118,8 +117,8 @@ body {
 }
 
   #modal-image {
-    width: 150px;
-    height: 150px; 
+    width:  auto;
+    height: auto; 
     max-width: 90%;
     max-height: 80vh;
   }
