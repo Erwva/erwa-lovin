@@ -1,4 +1,4 @@
-/* Promjene u tvom CSS-u */
+
 .content-container {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -8,7 +8,6 @@
   transition: box-shadow 0.3s ease;
 }
 
-/* Kada korisnik pređe mišem preko kartice */
 .content-container:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -73,7 +72,7 @@ body {
 #modal-content {
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  margin: 5% auto; /* Prilagođene margine za modalni prozor */
+  margin: 5% auto;
 }
 
 #modal-image {
@@ -85,9 +84,9 @@ body {
   margin: auto;
   width: 700px;
   height: 600px;
-  max-width: 90%; /* Prilagođena maksimalna širina za mobilne uređaje */
-  height: auto; /* Automatsko podešavanje visine */
-  max-height: 80vh; /* Ograniči maksimalnu visinu na 80% visine ekrana */
+  max-width: 90%; 
+  height: auto;
+  max-height: 80vh;
 }
 
 #modal-header {
@@ -95,30 +94,39 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* Stilovi za ekrane manje ili jednake 768px širine */
   .content-container {
-    flex-direction: column; /* Stavi sadržaj vertikalno za manje ekrane */
-    align-items: center; /* Centriraj sadržaj */
+    flex-direction: column;
+    align-items: center; 
   }
 
   .boxtext p {
-    margin-top: 2vh; /* Manji razmak između paragrafa */
+    margin-top: 2vh; 
   }
 
-  /* Stilovi za modalni prozor na mobilnim uređajima */
   .modal {
-    /* Tvoji trenutni stilovi za modalni prozor */
-  }
+
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
   #modal-image {
-    width: auto; /* Prilagođena širina slike */
-    height: auto; /* Automatsko podešavanje visine */
-    max-width: 100%; /* Ograniči maksimalnu širinu na 100% */
-    max-height: 80vh; /* Ograniči maksimalnu visinu na 80% visine ekrana */
+    width: auto;
+    height: auto; 
+    max-width: 90%;
+    max-height: 80vh;
   }
 
   #modal-content {
-    margin: 5% auto; /* Prilagođene margine za modalni prozor */
+    margin: 5% auto;
+    max-width: 90%;
   }
 }
 
