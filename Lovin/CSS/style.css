@@ -98,13 +98,17 @@ h1{
     
 }
 
-#footer{
+#footer {
+    background-color: #fff;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
     background-color: #c1d6ff;
-    width: auto;
-    height: 150px;
-    text-align: right;
-    padding-right: 2%;
-    padding-top: 8px;
+  }
+
+#p1{
+    margin-top: 50px;
 }
 body{
     background-color: #f0f5ff;
