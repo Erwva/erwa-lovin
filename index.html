@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>            
+            </button>
+            <a class="navbar-brand" href="https://www.ferit.unios.hr/">FERIT</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Početna</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Studenti<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Ervacic/HTML/profil.html">Marino Ervačić</a></li>
+                  <li><a href="Lovin/HTML/lovin.html">Filip Lovin</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div id="image"></div><img src="Ervacic/IMAGES/erwa.jpg" alt="Ervacic Slika" class="slika" id="smallImage" onclick="show(this)"></div>
+      <p class="tekst">
+        Ime i prezime: Marino Ervačić
+        <br>Datum rođenja: 14. Rujna 2002.
+       <br>Mjesto rođenja: Đakovo
+       <br>Prebivalište: Piškorevci
+       <br>Spol: M
+      </p>
+
+      <div class="audio">
+        <audio controls>
+          <source src="Ervacic/VIDEOS/Govor.m4a" type="audio/ogg">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+      <div id="btndet"><a href="Ervacic/HTML/profil.html" class="saznajvise">Više detalja</a></div>
+    </div>
+    
+    <div class="container">
+      <div id="image"></div><img src="Lovin/IMAGES/lovin.jpg" alt="Lovin Slika" class="slika" onclick="show(this)"></div>
+      
+      <p class="tekst">
+        Ime i prezime: Filip Lovin
+        <br>Datum rođenja: 9.12.1998
+       <br>Mjesto rođenja: Vinkovci
+       <br>Prebivalište: Vinkovci
+       <br>Spol: M
+      </p>
+      <div class="audio">
+      <audio controls>
+        <source src="Lovin/IMAGES/Lovin_uvod.m4a" type="audio/ogg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+      <div id="btndet"><a href="Lovin/HTML/lovin.html" class="saznajvise">Više detalja</a></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div id="modal-header"><button type="button" class="" onclick="this.parentElement.parentElement.style.display='none'">X</button>
+          
+          </div>
+      
+        <img src="" id="modal-image" width="" height=>
+
+    </div>
+    
+    <div id="footer">
+      <img src="logofer.png" alt="" width="250" height="80" style="cursor: pointer;" onclick="openPage()">
+      <p id="p1">Stranica je izrađena za vrijeme pohađanja kolegija Multimedijska tehnika</p>
+      <p id="p2">Ervačić | Lovin, 17. Travanj 2024, Dislocirani stručni studij Vinkovci</p>
+  
+  </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
